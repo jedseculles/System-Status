@@ -1,0 +1,11 @@
+one:
+  title: MyString
+  content: MyText
+  date: 2010-09-02 12:30:04
+  status: MyText
+
+two:
+  title: MyString
+  content: MyText
+  date: 2010-09-02 12:30:04
+  status: MyText

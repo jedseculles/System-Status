@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= h(yield(:title) || "System Status") %></title>
+    <%= stylesheet_link_tag 'default' %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+      
+ 	  <div id="heading">
+      	<%- if show_title? -%>
+			<%=yield(:header)%>
+		<%- end -%>
+		<span><%=h link_to 'HOME', root_url %></span>
+	  </div>
+      
+      <%= yield %>
+    </div>
+	<div class="copyright">Made by Dan.</div>
+  </body>
+</html>

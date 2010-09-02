@@ -1,0 +1,11 @@
+<% title "System Status ~ Edit" %>
+<% content_for :header do -%>
+	System Status
+<% end -%>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @state %> |
+  <%= link_to "View All", states_path %>
+</p>
