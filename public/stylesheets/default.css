@@ -36,6 +36,7 @@ a {
   font-weight: bold;
   font-size: 2em;
   margin-bottom: 10px;
+  min-height: 30px;
 }
 
 #heading span a{
