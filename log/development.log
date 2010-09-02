@@ -3352,3 +3352,132 @@ Processing StatesController#index (for 127.0.0.1 at 2010-09-02 13:14:35) [GET]
 Rendering template within layouts/application
 Rendering states/index
 Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to ClearanceCreateUsers (20100902111526)
+Migrating to CreateStates (20100902113004)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("states")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_id_and_confirmation_token')[0m
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:28:19) [GET]
+  [4;36;1mState Load (0.6ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 49ms (View: 43, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2010-09-02 18:28:23) [GET]
+Rendering template within layouts/application
+Rendering states/new
+Rendered states/_form (78.6ms)
+Completed in 93ms (View: 88, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2010-09-02 18:28:42) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"gwUWFH9q7kmB3894cZhf2KpuxpJAnq4/wPTGu4bbSck=", "state"=>{"date(1i)"=>"2010", "date(2i)"=>"9", "title"=>"Another Event", "date(3i)"=>"2", "date(4i)"=>"17", "date(5i)"=>"28", "content"=>"This is another event that has happened on the server.", "status"=>"ONGOING"}}
+  [4;35;1mState Create (0.4ms)[0m   [0mINSERT INTO "states" ("created_at", "title", "updated_at", "date", "content", "status") VALUES('2010-09-02 17:28:42', 'Another Event', '2010-09-02 17:28:42', '2010-09-02 17:28:00', 'This is another event that has happened on the server.', 'ONGOING')[0m
+Redirected to http://localhost:3000/states/2
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2010-09-02 18:28:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering states/show
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/states/2]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2010-09-02 18:29:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mState Load (0.2ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering states/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/states/2]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:29:45) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:30:32) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:31:10) [GET]
+  [4;36;1mState Load (0.4ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:31:41) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:31:51) [GET]
+  [4;36;1mState Load (0.4ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:31:56) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:32:02) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:32:11) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:32:21) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-02 18:32:27) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]

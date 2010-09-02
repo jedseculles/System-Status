@@ -40,8 +40,8 @@ a {
 
 #heading span a{
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 30px;
+  right: 40px;
   font-size: 0.4em;
   font-weight: normal;
   color: #eee;
@@ -112,6 +112,7 @@ ul#states li {
   padding: 10px;
   border: 1px solid #c9c9c9;
   background-color: #f8f8f8;
+  margin-bottom: 10px;
 }
 
 div.copyright {
