@@ -3,6 +3,7 @@
 	System Status
 <% end -%>
 
+<% unless @states.empty? %>
 <ul id="states">
   <% for state in @states %>
     <li>
@@ -17,6 +18,12 @@
     </li>
   <% end %>
 </ul>
+
+<% else %>
+
+<h1>Hurrah, everything is running perfectly.</h1>
+
+<% end %>
 
 <% if signed_in? %>
 <p><%= link_to "New Status Update", new_state_path, :class => "newstatusupdate" %></p>

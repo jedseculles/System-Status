@@ -6554,3 +6554,496 @@ Rendering template within layouts/application
 Rendering sessions/new
   [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
 Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:48:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:48:10) [GET]
+  [4;35;1mState Load (0.7ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+Completed in 78ms (View: 73, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:48:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'd089c6e6561e9f26d188fff9713beb6a98fd7281') LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#create (for 127.0.0.1 at 2010-09-03 10:48:24) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"danny@macandco.co.uk"}, "action"=>"create", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "controller"=>"clearance/sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'danny@macandco.co.uk') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:48:24) [GET]
+  [4;35;1mState Load (0.7ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'e64fde16b1308de2e9ca0c30fab217d2ac7a88bd') LIMIT 1[0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:48:56) [GET]
+  [4;35;1mState Load (0.7ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'e64fde16b1308de2e9ca0c30fab217d2ac7a88bd') LIMIT 1[0m
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:48:58) [GET]
+  [4;35;1mState Load (0.8ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'e64fde16b1308de2e9ca0c30fab217d2ac7a88bd') LIMIT 1[0m
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#destroy (for 127.0.0.1 at 2010-09-03 10:48:59) [GET]
+  Parameters: {"method"=>:delete, "action"=>"destroy", "controller"=>"clearance/sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'e64fde16b1308de2e9ca0c30fab217d2ac7a88bd') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-09-03 09:48:59', "remember_token" = 'f259b7ea49430104b7da30eeb594dec6cecb4216' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/sign_in
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/sign_out]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:48:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:49:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#create (for 127.0.0.1 at 2010-09-03 10:49:07) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"danny@macandco.co.uk"}, "action"=>"create", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "controller"=>"clearance/sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'danny@macandco.co.uk') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:07) [GET]
+  [4;36;1mState Load (0.7ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'f259b7ea49430104b7da30eeb594dec6cecb4216') LIMIT 1[0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:18) [GET]
+  [4;36;1mState Load (0.7ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'f259b7ea49430104b7da30eeb594dec6cecb4216') LIMIT 1[0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#destroy (for 127.0.0.1 at 2010-09-03 10:49:19) [GET]
+  Parameters: {"method"=>:delete, "action"=>"destroy", "controller"=>"clearance/sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'f259b7ea49430104b7da30eeb594dec6cecb4216') LIMIT 1[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-09-03 09:49:19', "remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/sign_in
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/sign_out]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:49:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:49:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::SessionsController#create (for 127.0.0.1 at 2010-09-03 10:49:26) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"danny@macandco.co.uk"}, "action"=>"create", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "controller"=>"clearance/sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'danny@macandco.co.uk') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:26) [GET]
+  [4;35;1mState Load (0.7ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#edit (for 127.0.0.1 at 2010-09-03 10:49:32) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering states/edit
+Rendered states/_form (73.0ms)
+Completed in 89ms (View: 81, DB: 0) | 200 OK [http://localhost/states/5/edit]
+
+
+Processing StatesController#update (for 127.0.0.1 at 2010-09-03 10:49:42) [PUT]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"5", "state"=>{"date(1i)"=>"2010", "date(2i)"=>"9", "title"=>"Test", "date(3i)"=>"3", "date(4i)"=>"08", "date(5i)"=>"45", "content"=>"This is a test", "status"=>"RESOLVED"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 5) [0m
+  [4;35;1mState Update (0.3ms)[0m   [0mUPDATE "states" SET "updated_at" = '2010-09-03 09:49:42', "status" = 'RESOLVED' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/states/5
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/states/5]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2010-09-03 10:49:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;35;1mState Load (0.2ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering states/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/states/5]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:44) [GET]
+  [4;36;1mState Load (0.7ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#destroy (for 127.0.0.1 at 2010-09-03 10:49:53) [DELETE]
+  Parameters: {"authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"5"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;35;1mState Load (0.2ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 5) [0m
+  [4;36;1mState Destroy (0.2ms)[0m   [0;1mDELETE FROM "states" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/states
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/states/5]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:53) [GET]
+  [4;35;1mState Load (0.7ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#destroy (for 127.0.0.1 at 2010-09-03 10:49:56) [DELETE]
+  Parameters: {"authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mState Destroy (0.2ms)[0m   [0mDELETE FROM "states" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/states
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/states/1]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:56) [GET]
+  [4;36;1mState Load (0.6ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#destroy (for 127.0.0.1 at 2010-09-03 10:49:58) [DELETE]
+  Parameters: {"authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;35;1mState Load (0.2ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 2) [0m
+  [4;36;1mState Destroy (0.2ms)[0m   [0;1mDELETE FROM "states" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/states
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/states/2]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:49:58) [GET]
+  [4;35;1mState Load (0.6ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#destroy (for 127.0.0.1 at 2010-09-03 10:50:01) [DELETE]
+  Parameters: {"authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"3"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 3) [0m
+  [4;35;1mState Destroy (0.3ms)[0m   [0mDELETE FROM "states" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/states
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/states/3]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:50:01) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#destroy (for 127.0.0.1 at 2010-09-03 10:50:02) [DELETE]
+  Parameters: {"authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "id"=>"4"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;35;1mState Load (0.2ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 4) [0m
+  [4;36;1mState Destroy (0.2ms)[0m   [0;1mDELETE FROM "states" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/states
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/states/4]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:50:02) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:50:05) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:51:23) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+
+ActionView::TemplateError (undefined local variable or method `state' for #<ActionView::Base:0x103515690>) on line #6 of app/views/states/index.html.erb:
+3: 	System Status
+4: <% end -%>
+5: 
+6: <% unless state.empty? %>
+7: <ul id="states">
+8:   <% for state in @states %>
+9:     <li>
+
+    app/views/states/index.html.erb:6
+
+Rendered rescues/_trace (95.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:51:31) [GET]
+  [4;36;1mState Load (0.4ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+
+ActionView::TemplateError (undefined local variable or method `states' for #<ActionView::Base:0x1036c84d8>) on line #6 of app/views/states/index.html.erb:
+3: 	System Status
+4: <% end -%>
+5: 
+6: <% unless states.empty? %>
+7: <ul id="states">
+8:   <% for state in @states %>
+9:     <li>
+
+    app/views/states/index.html.erb:6
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:51:36) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0x103319f58>) on line #6 of app/views/states/index.html.erb:
+3: 	System Status
+4: <% end -%>
+5: 
+6: <% unless State.empty? %>
+7: <ul id="states">
+8:   <% for state in @states %>
+9:     <li>
+
+    app/views/states/index.html.erb:6
+
+Rendered rescues/_trace (35.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:51:37) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0x103538c30>) on line #6 of app/views/states/index.html.erb:
+3: 	System Status
+4: <% end -%>
+5: 
+6: <% unless State.empty? %>
+7: <ul id="states">
+8:   <% for state in @states %>
+9:     <li>
+
+    app/views/states/index.html.erb:6
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:03) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:27) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:32) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:39) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:45) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:52) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 72ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:52:56) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:53:08) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:53:20) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:54:26) [GET]
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2010-09-03 10:54:27) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering states/new
+Rendered states/_form (29.8ms)
+Completed in 104ms (View: 96, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:54:44) [GET]
+  [4;36;1mState Load (0.4ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2010-09-03 10:54:45) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering states/new
+Rendered states/_form (10.6ms)
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2010-09-03 10:55:24) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "state"=>{"date(1i)"=>"2010", "date(2i)"=>"9", "title"=>"Power Outage in Zone 3", "date(3i)"=>"3", "date(4i)"=>"09", "date(5i)"=>"54", "content"=>"There is a power outage in Zone 3, we are currently investigating the cause and working on a solution.", "status"=>"BEING INVESTIGATED"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Create (0.3ms)[0m   [0;1mINSERT INTO "states" ("created_at", "title", "updated_at", "date", "content", "status") VALUES('2010-09-03 09:55:24', 'Power Outage in Zone 3', '2010-09-03 09:55:24', '2010-09-03 09:54:00', 'There is a power outage in Zone 3, we are currently investigating the cause and working on a solution.', 'BEING INVESTIGATED')[0m
+Redirected to http://localhost:3000/states/6
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2010-09-03 10:55:24) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering states/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/states/6]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:55:26) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 72ms (View: 68, DB: 1) | 200 OK [http://localhost/]

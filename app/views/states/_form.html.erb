@@ -14,7 +14,7 @@
   </p>
   <p>
     <%= f.label :status %><br />
-    <%= f.text_area :status %>
+	<%= f.select "status", ['BEING INVESTIGATED', 'ONGOING', 'RESOLVED'] %>
   </p>
   <p><%= f.submit %></p>
 <% end %>
