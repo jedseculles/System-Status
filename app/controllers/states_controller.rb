@@ -1,5 +1,5 @@
 class StatesController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate, :except => %w[ index ]
   def index
     @states = State.all
   end

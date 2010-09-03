@@ -18,4 +18,6 @@
   <% end %>
 </ul>
 
+<% if signed_in? %>
 <p><%= link_to "New State", new_state_path %></p>
+<% end %>

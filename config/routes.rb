@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :states
 
   Clearance::Routes.draw(map)
-  resource :session, :controller => 'sessions'  
+  map.resource :session, :controller => 'sessions'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -39,22 +39,43 @@ a {
   min-height: 30px;
 }
 
-#heading span a{
+#heading a {
+  color: white;
+  text-decoration: none;
+}
+
+#heading ul {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 40px;
   font-size: 0.4em;
   font-weight: normal;
   color: #eee;
   text-decoration: none;
+  list-style: none;
+  display: inline;
 }
 
-#flash_notice, #flash_error {
+#heading ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#heading ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#heading ul li a:hover {
+  text-decoration: underline;
+}
+
+#flash_notice, #flash_error, #flash_success {
   padding: 5px 8px;
   margin: 10px 0;
 }
 
-#flash_notice {
+#flash_notice, #flash_success {
   background-color: #CFC;
   border: solid 1px #6C6;
 }
