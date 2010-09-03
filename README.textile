@@ -14,3 +14,8 @@ h2. Quickstart
 
 At the moment, anyone can sign up for an account on System Status - that can be changed if you wish, or you may want to add the ability for a super user or administrator to send invitations and completely disable to sign up functionality. It's your choice.
 
+h2. Screenshots
+
+<img src="http://img.skitch.com/20100903-c2m4js4iqgsg7b3e9au4ywkqcw.jpg" alt="System Status" width="800px"/>
+<img src="http://img.skitch.com/20100903-fpy5g7ris9adj22xcb7ier5nw1.jpg" alt="System Status" width="800px"/>
+<img src="http://img.skitch.com/20100903-jss9dcd4m3w549k15edxkgr51w.jpg" alt="System Status" width="800px"/>
