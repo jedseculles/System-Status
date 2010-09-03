@@ -26,6 +26,25 @@ a {
   margin-top: 20px;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 15px 5px;
+}
+
+h2 {
+  font-size: 1em;
+  color: #1e681b;
+  display:block;
+  padding: 10px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
 #heading {
   position: relative;
   background-color: #3e8446;
@@ -191,6 +210,24 @@ a.newstatusupdate {
 
 a.newstatusupdate:hover {
   text-decoration: underline;
+}
+
+form label {
+  display: block;
+  padding: 5px 0;
+  font-size: small;
+}
+
+form input {
+  display: block;
+  padding: 5px;
+  min-width: 300px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form input#session_submit, form input#user_submit, form input#password_submit {
+  margin-top: 10px;	
 }
 
 div.copyright {
