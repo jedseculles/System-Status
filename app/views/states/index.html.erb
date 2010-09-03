@@ -6,18 +6,18 @@
 <ul id="states">
   <% for state in @states %>
     <li>
-      <span><%=h state.title %></span>
-      <span><%=h state.date %></span>
-      <span><%=h state.status %></span>
-<!--
-      <td><%= link_to "Show", state %></td>
-      <td><%= link_to "Edit", edit_state_path(state) %></td>
-      <td><%= link_to "Destroy", state, :confirm => 'Are you sure?', :method => :delete %></td>
--->
+      <span class="title"><%=h state.title %></span>
+	  <span class="status"><%=h state.status %></span>
+	  <span class="content"><%=h state.content %></span>
+      <span class="date"><%=h state.date %></span>
+	  
+	  <% if signed_in? %>
+      <span class="loggedinlinks"><%= link_to "Show", state %> / <%= link_to "Edit", edit_state_path(state) %> / <%= link_to "Destroy", state, :confirm => 'Are you sure?', :method => :delete %></span>
+      <% end %>
     </li>
   <% end %>
 </ul>
 
 <% if signed_in? %>
-<p><%= link_to "New State", new_state_path %></p>
+<p><%= link_to "New Status Update", new_state_path, :class => "newstatusupdate" %></p>
 <% end %>
