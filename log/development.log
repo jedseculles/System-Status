@@ -7047,3 +7047,47 @@ Rendering template within layouts/application
 Rendering states/index
   [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
 Completed in 72ms (View: 68, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:56:30) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#destroy (for 127.0.0.1 at 2010-09-03 10:56:32) [GET]
+  Parameters: {"method"=>:delete, "action"=>"destroy", "controller"=>"clearance/sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '924be6abf3dd77a108a638a4c53ced8800a86e61') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-09-03 09:56:32', "remember_token" = 'd72ef8796604091fb4e3bb8a9366e887d09e00d2' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/sign_in
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/sign_out]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:56:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:56:34) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 10:56:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 10:56:52) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
