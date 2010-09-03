@@ -11,6 +11,7 @@ h2. Quickstart
 # Run rake gems:unpack
 # Run rake db:migrate
 # Run script/server
+# Edit config/initializers/clearance.rb to add your applications 'from' address for outgoing emails
 
 At the moment, anyone can sign up for an account on System Status - that can be changed if you wish, or you may want to add the ability for a super user or administrator to send invitations and completely disable to sign up functionality. It's your choice.
 

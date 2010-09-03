@@ -7221,3 +7221,93 @@ Rendering template within layouts/application
 Rendering states/index
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2bba65842be36d16d3aaf7e8818f0b989ea5a0ae') LIMIT 1[0m
 Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 11:08:27) [GET]
+  [4;36;1mState Load (0.6ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2bba65842be36d16d3aaf7e8818f0b989ea5a0ae') LIMIT 1[0m
+Completed in 34ms (View: 30, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#destroy (for 127.0.0.1 at 2010-09-03 11:08:29) [GET]
+  Parameters: {"method"=>:delete, "action"=>"destroy", "controller"=>"clearance/sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2bba65842be36d16d3aaf7e8818f0b989ea5a0ae') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-09-03 10:08:29', "remember_token" = '63b76f1ce1ae10286b5969fd2cc4fb1e63ab24f1' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/sign_in
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/sign_out]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 11:08:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::UsersController#new (for 127.0.0.1 at 2010-09-03 11:08:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (6.5ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/sign_up]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 11:08:34) [GET]
+  [4;36;1mState Load (0.5ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 11:08:35) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing Clearance::PasswordsController#new (for 127.0.0.1 at 2010-09-03 11:08:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/passwords"}
+Rendering template within layouts/application
+Rendering passwords/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/passwords/new]
+
+
+Processing Clearance::PasswordsController#create (for 127.0.0.1 at 2010-09-03 11:08:42) [POST]
+  Parameters: {"commit"=>"Reset password", "action"=>"create", "authenticity_token"=>"SQFF7xRGWCQ5C1D/eteOmGN4NB35uRXgFsD4WRFl4Gk=", "controller"=>"clearance/passwords", "password"=>"[FILTERED]"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'danny@macandco.co.uk') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-09-03 10:08:42', "confirmation_token" = 'db11e111298cc811ab58fb329e7e9da32512f7f9' WHERE "id" = 2[0m
+Sent mail to danny@macandco.co.uk
+
+Date: Fri, 3 Sep 2010 11:08:42 +0100
+From: donotreply@example.com
+To: danny@macandco.co.uk
+Subject: Change your password
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Someone, hopefully you, has requested that we send you a link to change your password.
+
+Here's the link:
+
+http://localhost:3000/users/2/password/edit?token=db11e111298cc811ab58fb329e7e9da32512f7f9
+
+If you didn't request this, ignore this email. Don't worry. Your password hasn't been changed.
+Redirected to http://localhost:3000/sign_in
+Completed in 99ms (DB: 1) | 302 Found [http://localhost/passwords]
+
+
+Processing Clearance::SessionsController#new (for 127.0.0.1 at 2010-09-03 11:08:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clearance/sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sign_in]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2010-09-03 11:08:57) [GET]
+  [4;35;1mState Load (0.5ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/application
+Rendering states/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/]
