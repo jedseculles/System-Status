@@ -17,6 +17,11 @@ At the moment, anyone can sign up for an account on System Status - that can be 
 
 h2. Screenshots
 
+Standard (Public) View
 <img src="http://img.skitch.com/20100903-c2m4js4iqgsg7b3e9au4ywkqcw.jpg" alt="System Status" width="800px"/>
+
+Sign In Screen
 <img src="http://img.skitch.com/20100903-fpy5g7ris9adj22xcb7ier5nw1.jpg" alt="System Status" width="800px"/>
+
+Standard (Public) View - when logged in
 <img src="http://img.skitch.com/20100903-jss9dcd4m3w549k15edxkgr51w.jpg" alt="System Status" width="800px"/>
