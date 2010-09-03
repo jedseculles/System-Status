@@ -1,0 +1,16 @@
+h1. System Status
+
+System Status is a basic application to alert your users of any errors or issues with your product/service. It's basic but easily adaptable for your individual needs.
+
+It's built using Clearance by Thoughtbot - so if you have a question regarding the authentication side of things, they are the people to ask.
+
+h2. Quickstart
+
+# If you don't want to develop using sqlite then edit the config/database.yml
+# Run rake gems:install
+# Run rake gems:unpack
+# Run rake db:migrate
+# Run script/server
+
+At the moment, anyone can sign up for an account on System Status - that can be changed if you wish, or you may want to add the ability for a super user or administrator to send invitations and completely disable to sign up functionality. It's your choice.
+
