@@ -4,6 +4,12 @@ System Status is a basic application to alert your users of any errors or issues
 
 It's built using Clearance by Thoughtbot - so if you have a question regarding the authentication side of things, they are the people to ask.
 
+h2. Roadmap
+
+# Twitter post commit integration to inform customers of updates on the application.
+# Invite new users functionality.
+# (Possibly) Add timeline updates to each individual status rather than updating the message in content.
+
 h2. Quickstart
 
 # If you don't want to develop using sqlite then edit the config/database.yml
